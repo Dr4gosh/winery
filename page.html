@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,WONK@9..144,700,0..1&family=Maven+Pro:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <main>
+      <header>
+        <nav class="logo-line">
+          <div class="line-wrap">
+            <div class="icons-left">
+              <i class="bi bi-arrow-left">
+                <p>Înapoi la pagina principală</p>
+              </i>
+              <i class="bi bi-heart mobile-none"></i>
+            </div>
+          </div>
+
+          <img src="./logo_top.svg" alt="winery_logo" class="logo" />
+          <div class="line-wrap">
+            <div class="icons-right">
+              <i class="bi bi-heart show-md"></i>
+              <i class="bi bi-person-circle"></i>
+              <i class="bi bi-cart3"></i>
+            </div>
+          </div>
+        </nav>
+        <h1>
+          <span> Colecție de Vinuri Vintage </span>
+
+          <span> Care Au Trecut Testul Timpului </span>
+        </h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nihil
+          eum aliquid officia, illo nisi consequatur minus, ipsam perspiciatis
+          beatae nostrum quisquam vel in mollitia! Sapiente, adipisci maxime.
+          Tempore, odio?
+        </p>
+
+        <div class="scroll-bot">
+          <i class="bi bi-arrow-down"></i>
+        </div>
+        <div class="filter-bar">
+          <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalCenter"
+            class="filter-button"
+            ><i class="bi bi-funnel"></i> Filtre</a
+          >
+          <div class="layout-buttons">
+            <span>Afisare :</span><i class="bi bi-grid out" id="grid-icon"></i>
+            <i class="bi bi-grid-fill filled"></i>
+            <svg
+              id="list-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="34.87"
+              height="34.872"
+              viewBox="0 0 34.87 34.872"
+            >
+              <g
+                id="Component_1_10"
+                data-name="Component 1 – 10"
+                transform="translate(1 1)"
+              >
+                <rect
+                  id="Rectangle_245"
+                  data-name="Rectangle 245"
+                  width="32.87"
+                  height="13.673"
+                  rx="4"
+                  fill="#FFF"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="2"
+                />
+                <rect
+                  id="Rectangle_246"
+                  data-name="Rectangle 246"
+                  width="32.87"
+                  height="13.673"
+                  rx="4"
+                  transform="translate(0 19.2)"
+                  fill="#FFF"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width="2"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="filters">
+          <div class="dropdown">
+            <button
+              class="filter-color"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+            >
+              Culoare <i class="bi bi-chevron-down"></i>
+            </button>
+            <div
+              class="dropdown-menu menu-1"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Roșu
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Rose
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Alb
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="filter-color"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+            >
+              Vintage <i class="bi bi-chevron-down"></i>
+            </button>
+            <div
+              class="dropdown-menu menu-2"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  2015+
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  2010-2015
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  2000-2010
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  < 2000
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="filter-color"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+            >
+              Nivel zahăr<i class="bi bi-chevron-down"></i>
+            </button>
+            <div
+              class="dropdown-menu menu-3"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sec
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Dulce
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button
+              class="filter-color"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+            >
+              Ţară<i class="bi bi-chevron-down"></i>
+            </button>
+            <div
+              class="dropdown-menu menu-4"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  România
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Moldova
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Italia
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Franța
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Restul Lumii
+                </label>
+              </div>
+              <!-- <a class="dropdown-item" href="/ceva"> 
+                            <input  type="checkbox"  value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Rosu
+                            </label>
+                        </a>    
+                        <a class="dropdown-item" href="/ceva"> 
+                            <input  type="checkbox"  value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Rosu
+                            </label>             
+                        </a> -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <p class="modal-header-line">Filtrează după:</p>
+            <p class="modal-filter-title">Culoare</p>
+            <div class="modal-filters">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Roșu
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Rose
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Alb
+                </label>
+              </div>
+            </div>
+            <p class="modal-filter-title">Vintage</p>
+            <div class="modal-filters">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  2015+
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  2010-2015
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  2000-2010
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  < 2000
+                </label>
+              </div>
+            </div>
+            <p class="modal-filter-title">Nivel zahăr</p>
+            <div class="modal-filters">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sec
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Dulce
+                </label>
+              </div>
+            </div>
+            <p class="modal-filter-title">Ţară</p>
+            <div class="modal-filters">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  România
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Moldova
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Italia
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Franța
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  checked
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Restul Lumii
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wine-card-grid">
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+        <div class="wine-card-container">
+          <div class="wine-card">
+            <span class="wine-card-year">2014</span>
+            <img src="./bottle.jpg" alt="nume sticla" class="wine-card-image" />
+            <i class="bi bi-heart wine-card-fav"></i>
+          </div>
+          <a href="/" class="wine-card-title">
+            Autograf Cabernet Sauvignon 2014, 0.74L Gitana Winery
+          </a>
+          <span class="wine-card-price"> 77.99 lei </span>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-wrap">
+          <div class="infos">
+            <p class="more-info-big">Contact</p>
+            <p class="more-info-big">WINEIN ROMANIA SRL</p>
+
+            <p>CUI <span>RO39560240</span></p>
+            <p>
+              Adresa:
+              <span>Strada Arcaşilor nr. 52F, Galaţi, Judeţ Galaţi </span>
+            </p>
+            <p>Telefon: <span>0741153454</span></p>
+
+            <p style="margin-top: 24px">
+              Luni-Vineri: <span>9:00 - 20:00</span>
+            </p>
+            <p>Sambata: <span>10:00 - 18:00</span></p>
+            <p>Duminica: <span>10:00 - 18:00</span></p>
+            <p>Email: <span>office@winein.ro</span></p>
+          </div>
+
+          <div class="logo-footer">
+            <img src="./Logo Footer.svg" alt="footer_logo" />
+            <p style="margin-top: 20px">
+              © Toate drepturile rezervate. Dezvoltat cu ❤️ de WINEIN
+            </p>
+          </div>
+
+          <div class="more-infos">
+            <div class="more-info-section">
+              <p class="more-info-big">Informații</p>
+              <p>Povestea noastră</p>
+              <p>Cum păstrăm vinul pe care îl cumperi de la noi</p>
+              <p>Protecţia consumatorilor - A.N.P.C.</p>
+            </div>
+            <div class="more-info-section" style="margin-top: 24px">
+              <p class="more-info-big">Termeni și Condiții</p>
+              <p>Termeni și Condiții</p>
+              <p>Politica de utilizare a cookie-urilor</p>
+              <p>Prelucrarea datelor cu caracter personal</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
